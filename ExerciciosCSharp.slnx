@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="Exercicio1_CalculadoraSimples/Exercicio1_CalculadoraSimples.csproj" />
+  <Project Path="Exercicio2_ParOuImpar/Exercicio2_ParOuImpar.csproj" />
+  <Project Path="Exercicio3_Fibonacci/Exercicio3_Fibonacci.csproj" />
+  <Project Path="Exercicio4_Fatorial/Exercicio4_Fatorial.csproj" />
+  <Project Path="Exercicio5_BubbleSort/Exercicio5_BubbleSort.csproj" />
+  <Project Path="Exercicio6_OrientacaoObjetos/Exercicio6_OrientacaoObjetos.csproj" />
+</Solution>
