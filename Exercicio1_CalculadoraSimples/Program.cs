@@ -4,28 +4,32 @@
 Console.WriteLine("=== Calculadora Simples ===");
 
 Console.Write("Digite o primeiro número: ");
-double a = double.Parse(Console.ReadLine()!);
+double a;
+while (!double.TryParse(Console.ReadLine(), out a))
+{
+    Console.Write("Entrada inválida. Digite um número: ");
+}
 
 Console.Write("Digite o segundo número: ");
-double b = double.Parse(Console.ReadLine()!);
+double b;
+while (!double.TryParse(Console.ReadLine(), out b))
+{
+    Console.Write("Entrada inválida. Digite um número: ");
+}
 
 Console.Write("Escolha a operação (+, -, *, /): ");
 string operacao = Console.ReadLine()!.Trim();
 
-double resultado;
 switch (operacao)
 {
     case "+":
-        resultado = a + b;
-        Console.WriteLine($"Resultado: {a} + {b} = {resultado}");
+        Console.WriteLine($"Resultado: {a} + {b} = {a + b}");
         break;
     case "-":
-        resultado = a - b;
-        Console.WriteLine($"Resultado: {a} - {b} = {resultado}");
+        Console.WriteLine($"Resultado: {a} - {b} = {a - b}");
         break;
     case "*":
-        resultado = a * b;
-        Console.WriteLine($"Resultado: {a} * {b} = {resultado}");
+        Console.WriteLine($"Resultado: {a} * {b} = {a * b}");
         break;
     case "/":
         if (b == 0)
@@ -34,8 +38,7 @@ switch (operacao)
         }
         else
         {
-            resultado = a / b;
-            Console.WriteLine($"Resultado: {a} / {b} = {resultado}");
+            Console.WriteLine($"Resultado: {a} / {b} = {a / b}");
         }
         break;
     default:
