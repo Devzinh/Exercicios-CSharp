@@ -15,6 +15,7 @@ O repositório reúne questões acadêmicas resolvidas e serve como portfólio p
 | `Exercicio4_Fatorial` | Fatorial | Recursão, laço iterativo, `long` |
 | `Exercicio5_BubbleSort` | Bubble Sort | Arrays, algoritmo de ordenação, otimização |
 | `Exercicio6_OrientacaoObjetos` | Sistema Bancário (POO) | Classes, herança, encapsulamento, polimorfismo |
+| `Exercicio7_CalculadoraDeFrete` | Calculadora de Frete | Padrão `switch`, tarifas por faixa, multiplicadores, validação |
 
 ---
 
@@ -62,3 +63,20 @@ Modela contas bancárias com herança e polimorfismo:
 - **`ContaBancaria`** (abstrata) – depósito, saque, saldo encapsulado.
 - **`ContaCorrente`** – cobra taxa de R$ 2,50 por saque.
 - **`ContaPoupanca`** – aplica rendimento mensal de 0,5%.
+
+### 7 – Calculadora de Frete
+Calcula o valor do frete com base no peso do pacote e na distância de entrega.  
+Diferentes faixas de peso e distância aplicam tarifas distintas:
+- **Tarifas por peso:**
+  - Até 1 kg → R$ 5,00/kg
+  - Até 5 kg → R$ 10,00/kg
+  - Até 20 kg → R$ 15,00/kg
+  - Até 50 kg → R$ 20,00/kg
+  - Acima de 50 kg → R$ 30,00/kg
+- **Multiplicadores por distância:**
+  - Até 100 km → 1.0x
+  - Até 300 km → 1.5x
+  - Até 600 km → 2.0x
+  - Até 1000 km → 2.8x
+  - Acima de 1000 km → 3.5x
+- **Cálculo:** Tarifa Base = (Tarifa/kg × peso) × Multiplicador de Distância
