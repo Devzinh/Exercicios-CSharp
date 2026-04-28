@@ -5,4 +5,5 @@
   <Project Path="Exercicio4_Fatorial/Exercicio4_Fatorial.csproj" />
   <Project Path="Exercicio5_BubbleSort/Exercicio5_BubbleSort.csproj" />
   <Project Path="Exercicio6_OrientacaoObjetos/Exercicio6_OrientacaoObjetos.csproj" />
+  <Project Path="Exercicio7_CalculadoraDeFrete/Exercicio7_CalculadoraDeFrete.csproj" />
 </Solution>
