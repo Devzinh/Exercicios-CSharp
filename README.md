@@ -15,7 +15,7 @@ O repositório reúne questões acadêmicas resolvidas e serve como portfólio p
 | `Exercicio4_Fatorial` | Fatorial | Recursão, laço iterativo, `long` |
 | `Exercicio5_BubbleSort` | Bubble Sort | Arrays, algoritmo de ordenação, otimização |
 | `Exercicio6_OrientacaoObjetos` | Sistema Bancário (POO) | Classes, herança, encapsulamento, polimorfismo |
-| `Exercicio7_CalculadoraDeFrete` | Calculadora de Frete | Padrão `switch`, tarifas por faixa, multiplicadores, validação |
+| `Exercicio7_CalculadoraDeFrete` | Calculadora de Frete | Geolocalização, cálculo de rota, API HTTP, desconto por pagamento |
 
 ---
 
