@@ -65,18 +65,13 @@ Modela contas bancárias com herança e polimorfismo:
 - **`ContaPoupanca`** – aplica rendimento mensal de 0,5%.
 
 ### 7 – Calculadora de Frete
-Calcula o valor do frete com base no peso do pacote e na distância de entrega.  
-Diferentes faixas de peso e distância aplicam tarifas distintas:
-- **Tarifas por peso:**
-  - Até 1 kg → R$ 5,00/kg
-  - Até 5 kg → R$ 10,00/kg
-  - Até 20 kg → R$ 15,00/kg
-  - Até 50 kg → R$ 20,00/kg
-  - Acima de 50 kg → R$ 30,00/kg
-- **Multiplicadores por distância:**
-  - Até 100 km → 1.0x
-  - Até 300 km → 1.5x
-  - Até 600 km → 2.0x
-  - Até 1000 km → 2.8x
-  - Acima de 1000 km → 3.5x
-- **Cálculo:** Tarifa Base = (Tarifa/kg × peso) × Multiplicador de Distância
+Calcula o valor do frete com base na cidade de origem e destino, utilizando geolocalização via Nominatim e cálculo de rota via OSRM.  
+Também considera o tipo de veículo e a forma de pagamento:
+
+- **Tipos de veículo e preço por km:**
+  - Carro → R$ 0,50/km
+  - Moto → R$ 0,30/km
+  - Caminhão → R$ 1,00/km
+- **Pagamento com desconto:**
+  - PIX ou dinheiro → 10% de desconto
+- **Cálculo:** Tarifa final = (Preço por km × distância) - desconto
